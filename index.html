@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>payment</title>
+</head>
+<body>
+  <div class="container">
+    <h6>checkout</h6>
+    <span>x</span>
+    <h1>payment Method</h1>
+    <form acton="">
+      <lable for="contury">Country
+        <select name="country" id="country">
+        <option value="canada">canada</option>
+        <option value="nigeria">america</option>
+        <option value="ghana">ghana</option>
+        </select>
+      </lable>
+
+      <label for="cardno">Card number
+        <input type="text" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace">
+      </label>
+
+      <div class="float">
+        <label for="validtill">valid till
+        <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()"/>
+      </label>
+      <label for="cvv">Cvv
+        <input type="text" name="cvv" id="cvv" maxlength="3"/>
+      </label>
+    </div>
+      <babel for="checkbox">
+        <input type="checkbox" name="checkbox" id="checkbox"/>
+        <p>Payment Address is the same as Delivery Address</p>
+      </babel>
+      <button>PAY NOW $400.56</button>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
